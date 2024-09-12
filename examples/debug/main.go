@@ -16,6 +16,7 @@ type person struct {
 
 func findPerson(people []*person, name string) *person {
 	for i := range people {
+		fmt.Printf("Checking name: %s\n", people[i].name)
 		if people[i].name == name {
 			return people[i]
 		}
@@ -39,7 +40,7 @@ func populate(people []*person) []*person {
 func main() {
 	people := make([]*person, 0, 6)
 	people = populate(people)
-	p := findPerson(people, "Dеrek")
+	p := findPerson(people, "Derek")
 	if p == nil {
 		fmt.Println("could not find Derek")
 	} else {
