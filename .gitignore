@@ -2,3 +2,8 @@
 node_modules
 .tmp
 npm-debug.log
+settings.json
+__debug_bin*
+examples/debug/debug
+.vscode/settings.json
+/.vscode
